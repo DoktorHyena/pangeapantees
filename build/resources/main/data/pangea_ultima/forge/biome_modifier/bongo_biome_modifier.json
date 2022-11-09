@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "bamboo_jungle",
+    "sparse_jungle",
+    "jungle"
+  ],
+  "spawners": {
+    "type": "pangea_ultima:bongo",
+    "weight": 25,
+    "minCount": 4,
+    "maxCount": 8
+  }
+}

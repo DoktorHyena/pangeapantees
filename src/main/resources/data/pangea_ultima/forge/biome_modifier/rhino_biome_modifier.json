@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "sparse_jungle",
+    "mangrove_swamp",
+    "swamp"
+  ],
+  "spawners": {
+    "type": "pangea_ultima:rhino",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

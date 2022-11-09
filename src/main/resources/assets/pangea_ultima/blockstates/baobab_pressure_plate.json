@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "powered=false": {
+      "model": "pangea_ultima:block/baobab_pressure_plate"
+    },
+    "powered=true": {
+      "model": "pangea_ultima:block/baobab_pressure_plate_down"
+    }
+  }
+}

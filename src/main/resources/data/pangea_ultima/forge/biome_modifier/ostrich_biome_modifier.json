@@ -1,0 +1,14 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "savanna_plateau",
+    "savanna",
+    "windswept_savanna"
+  ],
+  "spawners": {
+    "type": "pangea_ultima:ostrich",
+    "weight": 20,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

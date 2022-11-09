@@ -1,0 +1,42 @@
+{
+  "hyenawhoop": {
+    "category": "neutral",
+    "subtitle": "subtitles.hyenawhoop",
+    "sounds": [
+      {
+        "name": "pangea_ultima:newwhoop",
+        "stream": false
+      }
+    ]
+  },
+  "growl": {
+    "category": "neutral",
+    "subtitle": "subtitles.growl",
+    "sounds": [
+      {
+        "name": "pangea_ultima:2022-07-12_19-50-17_trim",
+        "stream": false
+      }
+    ]
+  },
+  "ambience": {
+    "category": "ambient",
+    "subtitle": "subtitles.ambience",
+    "sounds": [
+      {
+        "name": "pangea_ultima:20090610_0_ambience",
+        "stream": false
+      }
+    ]
+  },
+  "trumpeter_hornbill": {
+    "category": "neutral",
+    "subtitle": "subtitles.trumpeter_hornbill",
+    "sounds": [
+      {
+        "name": "pangea_ultima:trumpter_hornbill",
+        "stream": false
+      }
+    ]
+  }
+}

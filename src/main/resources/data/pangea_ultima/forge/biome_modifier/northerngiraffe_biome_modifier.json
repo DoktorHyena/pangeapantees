@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "savanna_plateau",
+    "savanna"
+  ],
+  "spawners": {
+    "type": "pangea_ultima:northerngiraffe",
+    "weight": 21,
+    "minCount": 2,
+    "maxCount": 4
+  }
+}

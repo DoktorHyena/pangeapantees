@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "pangea_ultima:blocks/baobab_log_top",
+    "up": "pangea_ultima:blocks/baobab_log_top",
+    "north": "pangea_ultima:blocks/baobab_log_side",
+    "east": "pangea_ultima:blocks/baobab_log_side",
+    "south": "pangea_ultima:blocks/baobab_log_side",
+    "west": "pangea_ultima:blocks/baobab_log_side",
+    "particle": "pangea_ultima:blocks/baobab_log_top"
+  },
+  "render_type": "solid"
+}

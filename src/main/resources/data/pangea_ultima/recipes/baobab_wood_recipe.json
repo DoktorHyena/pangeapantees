@@ -1,0 +1,25 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "01",
+    "23"
+  ],
+  "key": {
+    "0": {
+      "item": "pangea_ultima:baobab_log"
+    },
+    "1": {
+      "item": "pangea_ultima:baobab_log"
+    },
+    "2": {
+      "item": "pangea_ultima:baobab_log"
+    },
+    "3": {
+      "item": "pangea_ultima:baobab_log"
+    }
+  },
+  "result": {
+    "item": "pangea_ultima:baobab_wood",
+    "count": 3
+  }
+}

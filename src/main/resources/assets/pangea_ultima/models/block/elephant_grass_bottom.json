@@ -1,0 +1,8 @@
+{
+  "parent": "block/cross",
+  "textures": {
+    "cross": "pangea_ultima:blocks/elephantgrass",
+    "particle": "pangea_ultima:blocks/elephantgrass"
+  },
+  "render_type": "cutout"
+}

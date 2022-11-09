@@ -1,0 +1,9 @@
+{
+  "parent": "block/slab",
+  "textures": {
+    "bottom": "pangea_ultima:blocks/baobab_planks",
+    "top": "pangea_ultima:blocks/baobab_planks",
+    "side": "pangea_ultima:blocks/baobab_planks"
+  },
+  "render_type": "solid"
+}

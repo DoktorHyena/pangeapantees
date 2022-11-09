@@ -1,0 +1,13 @@
+{
+  "parent": "block/cube",
+  "textures": {
+    "down": "pangea_ultima:blocks/baobab_leaves",
+    "up": "pangea_ultima:blocks/baobab_leaves",
+    "north": "pangea_ultima:blocks/baobab_leaves",
+    "east": "pangea_ultima:blocks/baobab_leaves",
+    "south": "pangea_ultima:blocks/baobab_leaves",
+    "west": "pangea_ultima:blocks/baobab_leaves",
+    "particle": "pangea_ultima:blocks/baobab_leaves"
+  },
+  "render_type": "translucent"
+}

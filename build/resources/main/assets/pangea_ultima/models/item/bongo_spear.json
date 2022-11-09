@@ -1,0 +1,7 @@
+{
+  "parent": "pangea_ultima:custom/bongo_horn_spear",
+  "textures": {
+    "0": "pangea_ultima:blocks/bongo_spear",
+    "particle": "pangea_ultima:items/bongo_spear"
+  }
+}

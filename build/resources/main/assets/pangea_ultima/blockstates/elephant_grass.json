@@ -1,0 +1,10 @@
+{
+  "variants": {
+    "half=upper": {
+      "model": "pangea_ultima:block/elephant_grass"
+    },
+    "half=lower": {
+      "model": "pangea_ultima:block/elephant_grass_bottom"
+    }
+  }
+}

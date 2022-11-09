@@ -1,0 +1,13 @@
+{
+  "type": "forge:add_spawns",
+  "biomes": [
+    "sunflower_plains",
+    "plains"
+  ],
+  "spawners": {
+    "type": "pangea_ultima:wildebeest",
+    "weight": 30,
+    "minCount": 4,
+    "maxCount": 10
+  }
+}

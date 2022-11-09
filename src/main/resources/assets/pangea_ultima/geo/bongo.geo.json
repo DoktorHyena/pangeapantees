@@ -1,0 +1,94 @@
+{
+	"format_version": "1.12.0",
+	"minecraft:geometry": [
+		{
+			"description": {
+				"identifier": "geometry.bongo",
+				"texture_width": 64,
+				"texture_height": 64,
+				"visible_bounds_width": 3,
+				"visible_bounds_height": 3.5,
+				"visible_bounds_offset": [0, 1.25, 0]
+			},
+			"bones": [
+				{
+					"name": "left_back_leg",
+					"pivot": [2.5, 9, 8.5],
+					"cubes": [
+						{"origin": [1, 0, 7], "size": [3, 10, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "right_back_leg",
+					"pivot": [-1.5, 9.25, 8.5],
+					"cubes": [
+						{"origin": [-3, 0, 7], "size": [3, 10, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "right_front_leg",
+					"pivot": [-2, 9, -4.75],
+					"cubes": [
+						{"origin": [-3, 0, -6.25], "size": [3, 10, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "left_front_leg",
+					"pivot": [3, 9, -4.5],
+					"cubes": [
+						{"origin": [1, 0, -6.25], "size": [3, 10, 3], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "body",
+					"pivot": [0, 16, 0],
+					"cubes": [
+						{"origin": [-4, 9, -6.5], "size": [9, 11, 17], "uv": [0, 0]}
+					]
+				},
+				{
+					"name": "head",
+					"pivot": [0.5, 15, -5],
+					"cubes": [
+						{"origin": [-2, 19, -18], "size": [5, 6, 11], "pivot": [1, 21, -9], "rotation": [55, 0, 0], "uv": [0, 28]},
+						{"origin": [-1.5, 9.25, -12.3], "size": [4, 7, 9], "pivot": [0, 16, -10], "rotation": [55, 0, 0], "uv": [32, 28]}
+					]
+				},
+				{
+					"name": "ear1",
+					"parent": "head",
+					"pivot": [3, 22, -8.5],
+					"cubes": [
+						{"origin": [3, 20, -9], "size": [4, 4, 1], "uv": [21, 28]}
+					]
+				},
+				{
+					"name": "ear2",
+					"parent": "head",
+					"pivot": [-2, 23, -8.5],
+					"cubes": [
+						{"origin": [-6, 20, -9], "size": [4, 4, 1], "uv": [0, 28]}
+					]
+				},
+				{
+					"name": "right_horn",
+					"parent": "head",
+					"pivot": [0.75, 24, -9],
+					"rotation": [-31.88034, -6.6782, -10.59061],
+					"cubes": [
+						{"origin": [-2.24, 23, -11], "size": [2, 10, 2], "uv": [0, 45], "mirror": true}
+					]
+				},
+				{
+					"name": "left_horn",
+					"parent": "head",
+					"pivot": [1.25, 24, -9],
+					"rotation": [-31.60659, 7.99365, 12.73415],
+					"cubes": [
+						{"origin": [1.24, 23, -11], "size": [2, 10, 2], "uv": [0, 45]}
+					]
+				}
+			]
+		}
+	]
+}
