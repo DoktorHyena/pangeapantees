@@ -885,7 +885,7 @@
       "type": "livingentity",
       "sortid": 82,
       "compiles": true,
-      "locked_code": true,
+      "locked_code": false,
       "registry_name": "hornbill"
     },
     {

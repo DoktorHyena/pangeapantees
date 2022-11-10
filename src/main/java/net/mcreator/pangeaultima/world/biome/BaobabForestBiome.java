@@ -39,10 +39,10 @@ import java.util.List;
 import com.google.common.collect.ImmutableList;
 
 public class BaobabForestBiome {
-	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(-0.033333333333f, 0.700000000001f),
-			Climate.Parameter.span(-0.966666666667f, -0.233333333333f), Climate.Parameter.span(0.143333333333f, 0.876666666667f),
-			Climate.Parameter.span(0.533333333333f, 1.266666666667f), Climate.Parameter.point(0),
-			Climate.Parameter.span(-0.736757667765f, -0.003424334431f), 0);
+	public static final Climate.ParameterPoint PARAMETER_POINT = new Climate.ParameterPoint(Climate.Parameter.span(0.166666666667f, 0.500000000001f),
+			Climate.Parameter.span(-1.166666666667f, -0.833333333333f), Climate.Parameter.span(0.343333333333f, 0.676666666667f),
+			Climate.Parameter.span(0.733333333333f, 1.066666666667f), Climate.Parameter.point(0),
+			Climate.Parameter.span(-0.536757667765f, -0.203424334431f), 0);
 
 	public static Biome createBiome() {
 		BiomeSpecialEffects effects = new BiomeSpecialEffects.Builder().fogColor(12638463).waterColor(4159204).waterFogColor(329011).skyColor(7972607)
@@ -93,7 +93,7 @@ public class BaobabForestBiome {
 		BiomeDefaultFeatures.addDefaultOres(biomeGenerationSettings);
 		BiomeDefaultFeatures.addSurfaceFreezing(biomeGenerationSettings);
 		MobSpawnSettings.Builder mobSpawnInfo = new MobSpawnSettings.Builder();
-		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.RAIN).temperature(1f).downfall(0.2f).specialEffects(effects)
+		return new Biome.BiomeBuilder().precipitation(Biome.Precipitation.NONE).temperature(1f).downfall(0f).specialEffects(effects)
 				.mobSpawnSettings(mobSpawnInfo.build()).generationSettings(biomeGenerationSettings.build()).build();
 	}
 }
