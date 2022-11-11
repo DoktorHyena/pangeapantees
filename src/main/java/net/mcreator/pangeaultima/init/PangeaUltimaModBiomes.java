@@ -30,7 +30,7 @@ import net.minecraft.resources.ResourceKey;
 import net.minecraft.core.Registry;
 import net.minecraft.core.Holder;
 
-import net.mcreator.pangeaultima.world.biome.BaobabForestBiome;
+import net.mcreator.pangeaultima.world.biome.BaobabWoodsBiome;
 import net.mcreator.pangeaultima.PangeaUltimaMod;
 
 import java.util.Map;
@@ -42,7 +42,7 @@ import com.mojang.datafixers.util.Pair;
 @Mod.EventBusSubscriber
 public class PangeaUltimaModBiomes {
 	public static final DeferredRegister<Biome> REGISTRY = DeferredRegister.create(ForgeRegistries.BIOMES, PangeaUltimaMod.MODID);
-	public static final RegistryObject<Biome> BAOBAB_FOREST = REGISTRY.register("baobab_forest", () -> BaobabForestBiome.createBiome());
+	public static final RegistryObject<Biome> BAOBAB_WOODS = REGISTRY.register("baobab_woods", () -> BaobabWoodsBiome.createBiome());
 
 	@SubscribeEvent
 	public static void onServerAboutToStart(ServerAboutToStartEvent event) {
@@ -57,8 +57,8 @@ public class PangeaUltimaModBiomes {
 				// Inject biomes to biome source
 				if (chunkGenerator.getBiomeSource() instanceof MultiNoiseBiomeSource noiseSource) {
 					List<Pair<Climate.ParameterPoint, Holder<Biome>>> parameters = new ArrayList<>(noiseSource.parameters.values());
-					parameters.add(new Pair<>(BaobabForestBiome.PARAMETER_POINT,
-							biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, BAOBAB_FOREST.getId()))));
+					parameters.add(new Pair<>(BaobabWoodsBiome.PARAMETER_POINT,
+							biomeRegistry.getOrCreateHolderOrThrow(ResourceKey.create(Registry.BIOME_REGISTRY, BAOBAB_WOODS.getId()))));
 
 					chunkGenerator.biomeSource = new MultiNoiseBiomeSource(new Climate.ParameterList<>(parameters), noiseSource.preset);
 				}
@@ -68,7 +68,7 @@ public class PangeaUltimaModBiomes {
 					SurfaceRules.RuleSource currentRuleSource = noiseGeneratorSettings.surfaceRule();
 					if (currentRuleSource instanceof SurfaceRules.SequenceRuleSource sequenceRuleSource) {
 						List<SurfaceRules.RuleSource> surfaceRules = new ArrayList<>(sequenceRuleSource.sequence());
-						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, BAOBAB_FOREST.getId()),
+						surfaceRules.add(1, preliminarySurfaceRule(ResourceKey.create(Registry.BIOME_REGISTRY, BAOBAB_WOODS.getId()),
 								Blocks.GRASS_BLOCK.defaultBlockState(), Blocks.DIRT.defaultBlockState(), Blocks.DIRT.defaultBlockState()));
 						NoiseGeneratorSettings moddedNoiseGeneratorSettings = new NoiseGeneratorSettings(noiseGeneratorSettings.noiseSettings(),
 								noiseGeneratorSettings.defaultBlock(), noiseGeneratorSettings.defaultFluid(), noiseGeneratorSettings.noiseRouter(),

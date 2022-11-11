@@ -1,6 +1,6 @@
 {
   "type": "forge:add_features",
-  "biomes": "pangea_ultima:baobab_forest",
+  "biomes": "pangea_ultima:baobab_woods",
   "features": "pangea_ultima:baobab_tree",
   "step": "surface_structures"
 }

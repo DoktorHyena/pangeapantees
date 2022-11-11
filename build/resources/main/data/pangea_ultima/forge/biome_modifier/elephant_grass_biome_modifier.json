@@ -1,6 +1,0 @@
-{
-  "type": "forge:add_features",
-  "biomes": "swamp",
-  "features": "pangea_ultima:elephant_grass",
-  "step": "vegetal_decoration"
-}

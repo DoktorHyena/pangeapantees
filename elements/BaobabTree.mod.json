@@ -18,7 +18,7 @@
     "restrictionBlocks": [],
     "restrictionBiomes": [
       {
-        "value": "CUSTOM:BaobabForest"
+        "value": "CUSTOM:BaobabWoods"
       }
     ],
     "ignoreBlocks": "STRUCTURE_BLOCK"
