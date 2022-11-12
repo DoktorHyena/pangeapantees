@@ -10,7 +10,6 @@ import net.minecraftforge.registries.DeferredRegister;
 
 import net.minecraft.world.level.block.Block;
 
-import net.mcreator.pangeaultima.block.ElephantGrassBlock;
 import net.mcreator.pangeaultima.block.BaobabWoodBlock;
 import net.mcreator.pangeaultima.block.BaobabStairsBlock;
 import net.mcreator.pangeaultima.block.BaobabSlabBlock;
@@ -25,7 +24,6 @@ import net.mcreator.pangeaultima.PangeaUltimaMod;
 
 public class PangeaUltimaModBlocks {
 	public static final DeferredRegister<Block> REGISTRY = DeferredRegister.create(ForgeRegistries.BLOCKS, PangeaUltimaMod.MODID);
-	public static final RegistryObject<Block> ELEPHANT_GRASS = REGISTRY.register("elephant_grass", () -> new ElephantGrassBlock());
 	public static final RegistryObject<Block> BAOBAB_WOOD = REGISTRY.register("baobab_wood", () -> new BaobabWoodBlock());
 	public static final RegistryObject<Block> BAOBAB_LOG = REGISTRY.register("baobab_log", () -> new BaobabLogBlock());
 	public static final RegistryObject<Block> BAOBAB_PLANKS = REGISTRY.register("baobab_planks", () -> new BaobabPlanksBlock());

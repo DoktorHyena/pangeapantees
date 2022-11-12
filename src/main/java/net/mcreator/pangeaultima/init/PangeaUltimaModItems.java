@@ -11,7 +11,6 @@ import net.minecraftforge.common.ForgeSpawnEggItem;
 
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.item.Item;
-import net.minecraft.world.item.DoubleHighBlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.BlockItem;
 
@@ -45,7 +44,6 @@ public class PangeaUltimaModItems {
 			() -> new ForgeSpawnEggItem(PangeaUltimaModEntities.COYOTE, -6457512, -1, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
 	public static final RegistryObject<Item> RHINO = REGISTRY.register("rhino_spawn_egg",
 			() -> new ForgeSpawnEggItem(PangeaUltimaModEntities.RHINO, -10918030, -13157047, new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
-	public static final RegistryObject<Item> ELEPHANT_GRASS = doubleBlock(PangeaUltimaModBlocks.ELEPHANT_GRASS, CreativeModeTab.TAB_DECORATIONS);
 	public static final RegistryObject<Item> BLACK_RHINO = REGISTRY.register("black_rhino_spawn_egg",
 			() -> new ForgeSpawnEggItem(PangeaUltimaModEntities.BLACK_RHINO, -7509168, -9745096,
 					new Item.Properties().tab(CreativeModeTab.TAB_MISC)));
@@ -64,9 +62,5 @@ public class PangeaUltimaModItems {
 
 	private static RegistryObject<Item> block(RegistryObject<Block> block, CreativeModeTab tab) {
 		return REGISTRY.register(block.getId().getPath(), () -> new BlockItem(block.get(), new Item.Properties().tab(tab)));
-	}
-
-	private static RegistryObject<Item> doubleBlock(RegistryObject<Block> block, CreativeModeTab tab) {
-		return REGISTRY.register(block.getId().getPath(), () -> new DoubleHighBlockItem(block.get(), new Item.Properties().tab(tab)));
 	}
 }

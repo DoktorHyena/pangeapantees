@@ -119,6 +119,9 @@
     "restrictionBiomes": [
       {
         "value": "CUSTOM:BaobabForest"
+      },
+      {
+        "value": "CUSTOM:BaobabWoodland"
       }
     ],
     "spawnInDungeons": false
