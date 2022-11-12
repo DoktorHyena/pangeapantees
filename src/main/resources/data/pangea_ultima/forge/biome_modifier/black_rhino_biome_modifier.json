@@ -1,9 +1,6 @@
 {
   "type": "forge:add_spawns",
-  "biomes": [
-    "pangea_ultima:baobab_forest",
-    "pangea_ultima:baobab_woodland"
-  ],
+  "biomes": "pangea_ultima:baobab_forest",
   "spawners": {
     "type": "pangea_ultima:black_rhino",
     "weight": 20,

@@ -78,7 +78,7 @@ public class HyenaEntity extends PathfinderMob implements IAnimatable {
 		this.goalSelector.addGoal(4, new AvoidEntityGoal<>(this, NortherngiraffeEntity.class, (float) 6, 1, 1.2));
 		this.targetSelector.addGoal(5, new NearestAttackableTargetGoal(this, WildebeestEntity.class, true, true));
 		this.targetSelector.addGoal(6, new NearestAttackableTargetGoal(this, Animal.class, true, true));
-		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 0.7));
+		this.goalSelector.addGoal(7, new RandomStrollGoal(this, 1));
 		this.goalSelector.addGoal(8, new RandomLookAroundGoal(this));
 		this.goalSelector.addGoal(9, new FloatGoal(this));
 	}
@@ -122,7 +122,7 @@ public class HyenaEntity extends PathfinderMob implements IAnimatable {
 
 	public static AttributeSupplier.Builder createAttributes() {
 		AttributeSupplier.Builder builder = Mob.createMobAttributes();
-		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.3);
+		builder = builder.add(Attributes.MOVEMENT_SPEED, 0.33);
 		builder = builder.add(Attributes.MAX_HEALTH, 10);
 		builder = builder.add(Attributes.ARMOR, 0);
 		builder = builder.add(Attributes.ATTACK_DAMAGE, 3);
